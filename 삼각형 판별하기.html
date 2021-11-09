@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>삼각형 판별하기</title>
+</head>
+<body>
+  <script>
+    function solution(a, b, c) {
+      let max;
+      let answer = "NO";
+      let total = a + b + c;
+
+      if (a > b) max = a;
+      else max = b;
+      if (max < c) max = c;
+
+      if ((total-max) > max) answer = "YES";
+
+      return answer;
+    }
+
+    console.log(solution(6,11,7));
+  </script>
+</body>
+</html>
