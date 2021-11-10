@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>연필 개수</title>
+</head>
+<body>
+  <script>
+    function solution(n) {
+      // let answer = Math.ceil(n/12);
+      let answer;
+
+      if (n % 12) answer = n/12 + 1;
+      else answer = n / 12; 
+
+      return parseInt(answer);
+    }
+    
+    console.log(solution(5));
+  </script>
+</body>
+</html>
