@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>최솟값 구하기</title>
+</head>
+<body>
+  <script>
+    function solution(arr) {
+      // let answer = Math.min(...arr);
+      let answer;
+      let min = Number.MAX_SAFE_INTEGER;
+      
+      for (const i of arr) {
+        if ( i < min) min = i;
+      }
+      answer = min;
+      return answer;
+    }
+
+    let arr = [5, 3, 7, 11, 2, 1, 17];
+    console.log(solution(arr));
+  </script>
+</body>
+</html>
