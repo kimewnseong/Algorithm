@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>홀수</title>
+</head>
+<body>
+  <script>
+    function solution(arr) {
+      let answer = [];
+      let sum = 0
+      let min_odd = Number.MAX_SAFE_INTEGER;
+      
+      for (const i of arr) {
+        if (i % 2) {
+          sum += i;
+          if (min_odd > i) min_odd = i;
+        }
+      }
+      answer.push(sum);
+      answer.push(min_odd);
+      return answer;
+    }
+
+    let arr = [12, 77, 38, 41, 53, 92, 85];
+    console.log(solution(arr));
+  </script>
+</body>
+</html>
