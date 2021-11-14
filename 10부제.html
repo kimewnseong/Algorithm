@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>10부제</title>
+</head>
+<body>
+  <script>
+    function solution(n, arr) {
+      let answer = 0;
+      
+      for (const item of arr) {
+        if (item % 10 === n) answer += 1;
+      }
+      return answer;
+    }
+
+    let num = 3;
+    let arr = [23, 3, 13, 43, 53, 17, 33];
+    console.log(solution(num, arr));
+  </script>
+</body>
+</html>
