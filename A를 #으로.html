@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>A를 #으로</title>
+</head>
+<body>
+  <script>
+    function solution(str) {
+      let answer = "";
+      
+      for (let i of str) {
+        if (i === "A") answer += "#";
+        else answer += i;
+      }
+      return answer;
+    }
+
+    let string = "BANANA";
+    console.log(solution(string));
+  </script>
+</body>
+</html>
